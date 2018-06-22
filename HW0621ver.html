@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 需要時上網查https://www.w3schools.com/css/css_rwd_viewport.asp -->
+	<title>resume0615</title>
+	<style>
+ 		
+		body{
+			font-family: "Garamond","微軟正黑體","PingFang SC";
+		}
+
+ 		.resume .row .read{
+			display: flex;
+			justify-content: column;
+			/* height: 400vh; vh為視窗高  */		
+	 	}
+
+		.read{
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		@media only screen and (max-width: 767px) {
+			.read{
+				flex-direction: column; 
+			}
+		}
+
+		.row{
+			width: 100%;
+			height: 700px;
+			/* background-color: #04060F; */
+			background-image: url("./flowerRoad.png");
+			background-size: 100%;
+			color: #F2EAED;
+			letter-spacing: 2px;
+			/* left: 10px; */
+			position: relative;
+		}
+		
+		.block{
+			width: 80%;
+			height: 100px;
+			/* 四個:上右下左; 兩個:上下,左右  */
+			padding: 30px 30px; 
+			margin: 30px;
+			/* 橢圓角-從左上角開始四角分別為1234角，兩個: 13 24角 */
+			border-radius: 25px 25px;
+			background-color: rgb(41, 51, 86, 0.5);
+			position: absolute;
+			left: 10px;
+			top: 450px;
+
+		}
+
+/* 		.block ul{
+			position: absolute;
+
+		} */
+
+		.block li{
+			width: 300px;
+			/* 	height: 200px; */
+			/* background-color: #F73859; */
+			text-align: center;
+			line-height: 12px;
+			font-size: 20px;
+			
+			/*橫向並列(文字概念)-區塊*/
+			display: inline-block;
+			position: relative;
+
+		}
+		
+		.block li:hover{
+			background-color: #3A4467;
+		}
+
+
+
+		.left{
+			width: 650px;			
+			/* background-image: url(http://www.kphoto.com.tw/image/catalog/Product/ASS/17_carnation_pink.gif); */
+			background-color: rgb(189, 163, 143,0.6);
+			background-size: 50%;
+		}
+
+		.right{
+			width: 650px;
+			background-color: rgb(189, 163, 143,0.6);		
+			background-size: 50%;
+		}
+
+		.main{
+			width: 650px;
+			background-color: rgb(189, 163, 143,0.6);
+			background-size: 50%;
+		}
+
+
+		.right>ul{
+			display: flex;
+			flex-direction: column;			
+		}
+
+		.left>ul{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.container li{
+		/* 空格li包含ul後代全部 */
+			width: 450px;
+			/* height: 420px; */
+			/* background-color: #F73859; */
+			/* text-align: center; */
+			line-height: 12px;
+			font-size: 40px;
+			color: #000;
+			/*橫向並列(文字概念)-區塊*/
+			display: inline-block;
+			position: relative;
+		}
+
+		.container2 li{
+		/* 空格li包含ul後代全部 */
+			width: 450px;
+			line-height: 12px;
+			font-size: 40px;
+			color: #000;
+			display: inline-block;
+			position: relative;
+			border-radius: 10px 10px;
+		}		
+		
+		.left ul>li{
+			width: 450px;
+			/* 四個:上右下左; 兩個:上下,左右  */
+			padding: 60px 40px; 
+			margin: 30px;
+			/* 橢圓角-從左上角開始四角分別為1234角，兩個: 13 24角 */
+			border-radius: 25px 25px;
+			box-shadow: 1px 1px 1px 1px;
+			background-color: rgba(17, 141, 141,0.4);
+		}
+
+		.right ul>li{
+			width: 450px;
+			/* height: 600px; */
+			/* 四個:上右下左; 兩個:上下,左右  */
+			padding: 60px 40px; 
+			margin: 30px;
+			/* 橢圓角-從左上角開始四角分別為1234角，兩個: 13 24角 */
+			border-radius: 25px 25px;
+			box-shadow: 1px 1px 1px 1px;
+			background-color: rgba(17, 141, 141,0.4);
+		}
+
+		.btn {
+			width: 450px;
+			height: 100px;
+			background-color: rgb(241, 78, 75);
+			font-size: 40px;
+			text-align: center;
+			line-height: 60px;			
+		}
+
+/* 		.catalog {
+			width: 450px;
+			height: 500px;
+			background-color: rgb(250, 185, 184);
+			font-size: 30px;
+			/* text-align: center; */
+			line-height: 30px;			
+		} */
+
+
+
+
+
+		h3{
+			color:rgb(0, 13, 41);
+			/* text-shadow: 2px 2px; */
+			text-align: center;
+			letter-spacing: 2px;
+		}
+
+		h4{
+			text-align: center;
+			color: rgb(0, 13, 41);
+			letter-spacing: 2px;
+		}
+		
+		h5{
+			color: #F2EAED;
+		}
+
+		h6{
+			font-size: 30px;
+			color: rgb(0, 13, 41);
+			line-height: 20px;
+		}
+
+
+
+		.person{
+			position: absolute;
+		}
+
+		.head{
+			width: 250px;
+			height: 250px;
+			background-image: url("./Yuhanpic.png");
+			background-size: 100%;
+			border-radius: 60%;
+			position: relative;
+			left: 70px;
+		}
+
+		.telemail{
+			color: #F2EAED;
+			font-size: 26px;
+			left: 50px;
+			letter-spacing: 5px;
+		}	
+
+
+		.chiout{
+			width: 380px;
+			height: 30px;
+			background-color: #fff;
+			border-radius: 20px;
+			position: relative;
+			border: 2px solid #000;
+		}
+
+		.chiin{
+			width: 370px;
+			height: 20px;
+			background-color: #000D29;
+			border-radius: 20px;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			border: 2px solid #000;
+		}
+
+		/* chiin的eng版本設定，body是空格，style中間要加. */
+		.chiin.eng{
+			width: 65%;/* engout層的百分之70 */
+		}
+
+		.chiin.jp{
+			width: 85%;/* engout層的百分之70 */
+		}
+
+		.skills >h6{
+			color: rgb(0, 13, 41);
+			font-size: 26px;
+			left: 50px;
+			letter-spacing: 5px;
+		}
+
+		.line{
+			/* 長寬皆抓父層長與寬的百分比 */
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 25%;
+			border-left: dashed 1px #fff;
+			border-right: dashed 1px #fff;
+		}
+		
+		.line:before{
+			content:"";/* 注意!使用before或after一定有content */
+			display: block;/* 把本身的inline特性設定成block特性 */
+			height: 100%;
+			width: 1px;
+			background-color: #fff;
+			position: absolute;
+			left: 50%;
+			top: 0;
+		}
+
+		.detail{
+			font-size: 26px;
+			color: rgb(0, 13, 41);	
+			line-height: 26px;
+			letter-spacing: 2px;		
+		}
+
+		.aboutme .detail{
+			font-size: 24px;
+			letter-spacing: 5px;
+			line-height: 26px;
+		}
+
+		.btnsm{
+			width: 450px;
+			height: 100px;
+			background-color: rgb(250, 185, 184);
+			font-size: 30px;
+			/* text-align: center; */
+			line-height: 30px;
+			/* border-radius: 10px 10px;				 */
+		}
+
+		.btnsm:hover{
+			background-color: rgb(350, 285, 284);	
+		}
+		
+		.row>.profile22{
+			/* margin: 25px; */
+			padding-top: 150px;
+			padding-left: 60px;
+			color: #fff;
+			font-size: 70px;
+			font-weight: bolder; 
+
+		}
+
+
+
+
+	</style>
+
+
+
+</head>
+<body>
+	<div class="resume">
+
+		<div class="row">
+			<br>
+			<div class="profile22">PROFILE</div>
+			<div class="block">
+				<ul>
+					<li class="blockcolor">
+						<img src="https://www.iconsdb.com/icons/preview/white/contacts-xxl.png" alt="avatar" style="width:40px;height:40px;">
+						<h5>ABOUT ME</h5>						
+					</li>
+					<li class="blockcolor">
+						<img src="https://www.iconsdb.com/icons/preview/white/3d-view-xxl.png" alt="exivon" style="width:40px;height:40px;">
+						<h5>EXPERIENCE</h5>
+					</li>
+					<li class="blockcolor">
+						<img src="https://www.iconsdb.com/icons/preview/white/email-2-xxl.png" alt="emailtome" style="width:40px;height:40px;">
+						<h5>CONTACT</h5>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+		
+		<div class="read">
+			
+			<div class="main">
+				<ul class="container2">
+					<li class="catalogishere">
+						<div class="btn">
+							<h4>INDEX</h4>
+						</div>
+						<ul class="catalog">
+
+							<li class="btnsm">
+								<h4>About Me</h4>
+							</li>
+							<li class="btnsm">
+								<h4>Contact</h4>
+							</li>
+							<li class="btnsm">
+								<h4>Lauguaue</h4>
+							</li>
+							<li class="btnsm">
+								<h4>Experience</h4>
+							</li>
+							<li class="btnsm">
+								<h4>Life</h4>
+							</li>							
+
+						</ul>
+						
+					</li>
+
+					<li>
+						<h6> § 2018 NTC 翁郁涵 </h6>
+					</li>
+				</ul>
+			</div>				
+
+
+			<div class="left">
+				<ul class="container">
+					<li class="person">
+						
+						<div class="head"></div>
+						<h3>YuHan Weng</h3>
+						<br>
+						<br>
+					</li>
+					
+					<li class="aboutme">
+						<h4>ABOUT ME</h4>
+						<hr>
+						<div class="detail">
+							<h6>Dance like no one's watching, love like you've never been hurt and live like it's heaven on earth.</h6>
+							
+						</div>
+						
+					</li>					
+					
+					<li class="connect">
+						<h4>CONTACT</h4>
+						<hr>
+						<br>
+						<div class="telemail">
+							<span>TEL</span> 0952023871		
+							<br><br>			
+							<span>E-mail</span> iku@gmail.com 
+						</div>
+						<br>
+						<br>
+						<a href="www.linkedin.com/in/yuhan-weng-翁郁涵-iku"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" style="width:50px;height:50px;"></a>
+						<a href="http://www.instagram.com/iku.xiaoyu/"><img src="https://cdn1.iconfinder.com/data/icons/social-links/551/instagram-512.png" alt="Facebook" style="width:50px;height:50px;"></a>		 
+						<a href="https://www.wantedly.com/users/37843649"><img src="https://d2v9k5u4v94ulw.cloudfront.net/assets/images/782760/original/cbd8fe99-c6b8-4f29-ab58-51dd0ce6cd63.png?1479193810" style="width:50px;height:50px;"></a>				
+
+						<br>
+						<br>
+					</li>
+				
+								
+					<li class="skills">
+						<h4>SKILLS</h4>
+						<hr>
+						<h6>中文</h6>
+						<div class="chiout">
+							<div class="chiin">	</div>
+						</div>
+						<h6>英文</h6>
+						<div class="chiout">					
+							<div class="line"></div>
+							<!-- chiin的eng版本設定，body是空格，style中間要加. -->
+							<div class="chiin eng">	</div>
+						</div>
+						<h6>日文</h6>
+						<div class="chiout">
+							<div class="chiin jp">	</div>
+						</div>
+
+
+					</li>
+
+				</ul>
+			</div>
+		
+
+			<div class="right">
+				<ul class="container">
+			
+					<li class="exprience">
+						<h4>EXPERIENCE</h4>
+						<hr>
+							<div class="detail">
+								<h6>2015-2018 THI Consults inc.</h6>
+								等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上等補上
+							</div>
+
+					</li>
+
+					<li class="exprience">
+						<h4>EDUCATION</h4>
+						<hr>
+							<div class="detail">
+								<h6>2009-2013 大學</h6>
+								<h6>輔仁大學 圖書資訊學系</h6>
+								修習圖書館及資訊管理課程，學習傳統及現代資訊整理、搜尋、分類、管理能力
+							</div>
+							<div class="detail">
+								<h6>2015.09 - 2016.02 / 語言留學</h6>
+								<h6>Japan Tokyo  KAI日本語學校</h6>
+								精進日語聽說讀寫及口語專業表達能力
+							</div>
+					</li>			
+				
+					<li class="life">
+						<h4>LIFE</h4>
+						<hr>
+							<div class="detail">
+								<h6>興趣</h6>
+								在專輯裡面找尋非主打歌的好歌、看電影、看書
+							</div>
+							<div class="detail">
+								<h6>未來想完成的事</h6>
+								征服日本所有的溫泉
+								
+							</div>
+
+					</li>
+					
+				</ul>		
+			</div>
+		
+		</div>
+	</div>
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+	<script>
+
+	$(".btn").click(function(){
+		$(".catalog").slideToggle();
+	});
+
+	$(".container").hover(function(){
+		$(".container").css("top":"40px");
+	});
+
+
+
+
+	</script>>
+
+
+
+</body>
+</html>
